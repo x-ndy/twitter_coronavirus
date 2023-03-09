@@ -200,9 +200,11 @@ English was the most common language for tweets containing `#coronavirus`.
 
 <img src=korcountry.png width=80% />
 
-Korean was (naturally) overwhelmingly the most common country and  language with the hashtag `#코로나바이러스`
+Korean was (naturally) overwhelmingly the most common country with the hashtag `#코로나바이러스`
 
 **#코로나바이러스 tweets by language**
+
+I can't quite figure out why I'm getting this result - the issue appears to occur around the `items = sorted(counts[args.key].items(), key=lambda item: (item[1],item[0]), reverse=True)` line in visualize.py. A print statement `print(items) after the line shows only a frequency of 1 for `ko` and `und`.
 
 <img src=korlanguage.png width=80% />
 

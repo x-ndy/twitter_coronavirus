@@ -21,6 +21,8 @@ import matplotlib.pyplot as plt
 with open(args.input_path) as f:
     counts = json.load(f)
 
+#print(counts)
+
 # normalize the counts by the total values
 if args.percent:
     for k in counts[args.key]:
@@ -28,6 +30,9 @@ if args.percent:
 
 # print the count values
 items = sorted(counts[args.key].items(), key=lambda item: (item[1],item[0]), reverse=True)
+
+#print(args.key)
+#print(items)
 
 freq = []
 hashtag = []
@@ -39,10 +44,13 @@ data = pd.DataFrame(
         {'Hashtag': hashtag,'Frequency': freq}
         )
 data = data.sort_values('Frequency', ascending = True).tail(10)
+
+#print(data)
+
 data.plot(x = 'Hashtag', y = 'Frequency', kind = 'bar')
 plt.xlabel('')
 plt.ylabel('')
-plt.savefig(f"korlanguage.png")
+plt.savefig(f"test.png")
 
 
 
