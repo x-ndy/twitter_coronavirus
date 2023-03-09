@@ -204,7 +204,7 @@ Korean was (naturally) overwhelmingly the most common country and  language with
 
 **#코로나바이러스 tweets by language**
 
-<img src=korlang.png width=80% />
+<img src=korlanguage.png width=80% />
 
 
 
