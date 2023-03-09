@@ -12,6 +12,10 @@ args = parser.parse_args()
 import os
 import json
 from collections import Counter,defaultdict
+import pandas as pd
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
 
 # open the input path
 with open(args.input_path) as f:
@@ -24,5 +28,29 @@ if args.percent:
 
 # print the count values
 items = sorted(counts[args.key].items(), key=lambda item: (item[1],item[0]), reverse=True)
+
+freq = []
+hashtag = []
+
 for k,v in items:
-    print(k,':',v)
+    hashtag.append(k)
+    freq.append(v)
+data = pd.DataFrame(
+        {'Hashtag': hashtag,'Frequency': freq}
+        )
+data = data.sort_values('Frequency', ascending = True).tail(10)
+data.plot(x = 'Hashtag', y = 'Frequency', kind = 'bar')
+plt.xlabel('')
+plt.ylabel('')
+plt.savefig(f"{args.key}country.png")
+
+
+
+
+
+
+
+
+
+
+
