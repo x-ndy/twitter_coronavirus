@@ -187,7 +187,7 @@ I'm more concerned with your ability to write a shell script and use `nohup`, `&
 **#coronavirus tweets by country**
 
 <img src=#coronaviruscountry.png width=80% />
-
+<img src=mapreduce.png width=100% />
 The US was the most common country of origin for tweets which contained the hashtag `#coronavirus`, followed by India and Great Britain.
 
 **#coronavirus tweets by language**
