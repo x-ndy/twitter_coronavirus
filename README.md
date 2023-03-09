@@ -186,25 +186,25 @@ I'm more concerned with your ability to write a shell script and use `nohup`, `&
 
 **#coronavirus tweets by country**
 
-<img src="#coronaviruscountry.png" width="80%" />
+<img src=coronaviruscountry.png width=80% />
 
 The US was the most common country of origin for tweets which contained the hashtag `#coronavirus`, followed by India and Great Britain.
 
 **#coronavirus tweets by language**
 
-<img src="#coronaviruslang.png" width="80%" />
+<img src=coronaviruslang.png width=80% />
 
 English was the most common language for tweets containing `#coronavirus`.
 
 **#코로나바이러스 tweets by country**
 
-<img src="#코로나바이러스country.png" width="80%" />
+<img src=korcountry.png width=80% />
 
 Korean was (naturally) overwhelmingly the most common country and  language with the hashtag `#코로나바이러스`
 
 **#코로나바이러스 tweets by language**
 
-<img src="#코로나바이러스lang.png" width="80%" />
+<img src=korlang.png width=80% />
 
 
 

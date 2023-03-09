@@ -42,7 +42,7 @@ data = data.sort_values('Frequency', ascending = True).tail(10)
 data.plot(x = 'Hashtag', y = 'Frequency', kind = 'bar')
 plt.xlabel('')
 plt.ylabel('')
-plt.savefig(f"{args.key}country.png")
+plt.savefig(f"korcountry.png")
 
 
 
